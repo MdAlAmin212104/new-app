@@ -3,11 +3,12 @@
 client_id = "2434f7d9388cde7cd724f1684e324857"
 name = "new-app"
 handle = "new-app-1100"
-application_url = "https://headphones-contractor-ssl-intl.trycloudflare.com"
+application_url = "https://beaver-montreal-mike-median.trycloudflare.com"
 embedded = true
 
 [build]
 include_config_on_deploy = true
+automatically_update_urls_on_dev = true
 
 [webhooks]
 api_version = "2025-07"
@@ -17,7 +18,7 @@ api_version = "2025-07"
 scopes = "read_content,read_inventory,read_product_listings,read_products,write_content,write_discounts,write_products"
 
 [auth]
-redirect_urls = ["https://headphones-contractor-ssl-intl.trycloudflare.com/auth/callback", "https://headphones-contractor-ssl-intl.trycloudflare.com/auth/shopify/callback", "https://headphones-contractor-ssl-intl.trycloudflare.com/api/auth/callback"]
+redirect_urls = ["https://beaver-montreal-mike-median.trycloudflare.com/auth/callback", "https://beaver-montreal-mike-median.trycloudflare.com/auth/shopify/callback", "https://beaver-montreal-mike-median.trycloudflare.com/api/auth/callback"]
 
 [pos]
 embedded = false
