@@ -22,7 +22,7 @@ export default function App() {
         <Link to="/app" rel="home">
           Home
         </Link>
-        <Link to="/app/additional">Additional page</Link>
+        <Link to="/app/layout">layout page</Link>
         <Link to="/app/input">Input page</Link>
         <Link to="/app/text">text page</Link>
       </NavMenu>

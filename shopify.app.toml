@@ -3,7 +3,7 @@
 client_id = "ebe9ea81368d82e604a028fa4202680f"
 name = "new-app"
 handle = "new-app-692"
-application_url = "https://screenshots-as-continuously-possess.trycloudflare.com"
+application_url = "https://enzyme-myth-jar-railroad.trycloudflare.com"
 embedded = true
 
 [build]
@@ -23,10 +23,10 @@ api_version = "2025-07"
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = "write_products"
+scopes = "write_products, write_script_tags"
 
 [auth]
-redirect_urls = ["https://screenshots-as-continuously-possess.trycloudflare.com/auth/callback", "https://screenshots-as-continuously-possess.trycloudflare.com/auth/shopify/callback", "https://screenshots-as-continuously-possess.trycloudflare.com/api/auth/callback"]
+redirect_urls = ["https://enzyme-myth-jar-railroad.trycloudflare.com/auth/callback", "https://enzyme-myth-jar-railroad.trycloudflare.com/auth/shopify/callback", "https://enzyme-myth-jar-railroad.trycloudflare.com/api/auth/callback"]
 
 [pos]
 embedded = false

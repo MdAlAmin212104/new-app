@@ -1,15 +1,27 @@
 import { json } from '@remix-run/node';
 import { useLoaderData } from '@remix-run/react';
-import React from 'react';
+import {authenticate} from '../shopify.server'
 
 
 
-export async function loader(){
-    const text = {
-        name: "text",
-        description : "this is description"
+export async function loader({request}){
+    const { admin } = await authenticate.admin(request);
+
+    const response = await admin.graphql(
+  `#graphql
+  query GetProducts {
+    products(first: 10) {
+      nodes {
+        id
+        title
+      }
     }
-    return json(text)
+  }`,
+);
+
+const data = await response.json();
+    return json(data);
+
 }
 const Text = () => {
     const textData = useLoaderData();
