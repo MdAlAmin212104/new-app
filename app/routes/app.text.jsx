@@ -25,7 +25,6 @@ const data = await response.json();
 }
 const Text = () => {
     const textData = useLoaderData();
-    console.log("text-date -----------------------", textData);
     return (
         <div>
             <h1>This is text data</h1>
